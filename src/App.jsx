@@ -27,7 +27,7 @@ function App() {
             <Card icon="./icon-verbal.svg" title="Verbal" score={61} />
             <Card icon="./icon-visual.svg" title="Visual" score={72} />
           </div>
-          <button className="bg-dark-grey-blue text-white rounded-full p-3">
+          <button className="bg-dark-grey-blue text-white rounded-full p-3 hover:bg-gradient-to-t from-light-royal-blue to-light-slate-blue">
             Continue
           </button>
         </div>
