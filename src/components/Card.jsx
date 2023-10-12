@@ -1,17 +1,7 @@
-export const Card = ({ icon, title, score }) => {
-  let color = "rgba(255, 87, 86)";
-  let bgColor = "rgba(255, 87, 86, 0.1)";
+import { colors } from "../utils";
 
-  if (title === "Memory") {
-    color = "rgba(254, 177, 31)";
-    bgColor = "rgba(254, 177, 31, 0.1)";
-  } else if (title === "Verbal") {
-    color = "rgba(3, 189, 145)";
-    bgColor = "rgba(3, 189, 145, 0.1)";
-  } else if (title === "Visual") {
-    color = "rgba(17, 38, 213)";
-    bgColor = "rgba(17, 38, 213, 0.1)";
-  }
+const Card = ({ icon, title, score }) => {
+  const { bgColor, color } = colors[title];
 
   return (
     <div
@@ -28,3 +18,5 @@ export const Card = ({ icon, title, score }) => {
     </div>
   );
 };
+
+export default Card;
