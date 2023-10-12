@@ -6,7 +6,7 @@ const Card = ({ icon, title, score }) => {
   return (
     <div
       style={{ backgroundColor: bgColor }}
-      className="flex justify-between bg-opacity-10 p-4 rounded-lg"
+      className="flex justify-between p-4 rounded-lg"
     >
       <div className="flex gap-2">
         <img src={icon} />
