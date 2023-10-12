@@ -3,18 +3,18 @@ import Card from "./components/Card";
 function App() {
   return (
     <div className="h-screen flex justify-center items-center">
-      <div className="flex border border-none rounded-3xl overflow-hidden">
-        <div className="flex-1 text-center flex flex-col items-center gap-6 bg-gradient-to-t from-light-royal-blue to-light-slate-blue p-9 border rounded-3xl">
+      <div className="flex flex-col 550:flex-row border border-none rounded-3xl overflow-hidden max-w-[610px]">
+        <div className="flex-1 text-center flex flex-col justify-between items-center gap-6 bg-gradient-to-t from-light-royal-blue to-light-slate-blue p-9 border rounded-3xl">
           <h1 className="text-secondary text-lg">Your Result</h1>
           <div className="border border-none rounded-full h-[150px] w-[150px] flex flex-col justify-center bg-gradient-to-t from-persian-blue to-violet-blue">
             <p className="text-white text-[50px] font-bold leading-[55px]">
               76
             </p>
-            <p className="text-secondary text-sm">of 100</p>
+            <p className="text-gray-400 text-sm">of 100</p>
           </div>
           <div>
             <h2 className="text-white text-2xl mb-2">Great</h2>
-            <p className="text-secondary">
+            <p className="text-gray-400">
               You scored higher than 65% of the people who have taken these test
             </p>
           </div>

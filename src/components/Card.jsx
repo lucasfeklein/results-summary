@@ -6,13 +6,13 @@ const Card = ({ icon, title, score }) => {
   return (
     <div
       style={{ backgroundColor: bgColor }}
-      className="flex justify-between p-4 rounded-lg"
+      className="flex justify-between p-3 rounded-lg"
     >
       <div className="flex gap-2">
         <img src={icon} />
         <p style={{ color: color }}>{title}</p>
       </div>
-      <p className="text-secondary">
+      <p className="text-gray-400">
         <span className="text-dark-grey-blue">{score}</span> / 100
       </p>
     </div>

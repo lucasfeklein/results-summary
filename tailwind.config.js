@@ -15,6 +15,9 @@ export default {
         "green-teal": "hsl(166, 100%, 37%)",
         "cobalt-blue": "hsl(234, 85%, 45%)",
       },
+      screens: {
+        550: "550px",
+      },
     },
   },
   plugins: [],
