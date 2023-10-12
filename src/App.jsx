@@ -19,7 +19,7 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="flex-1 p-9 flex flex-col gap-6">
+        <div className="flex-1 p-9 flex flex-col gap-6 justify-between">
           <h2 className="text-dark-grey-blue text-lg">Summary</h2>
           <div className="flex flex-col gap-3">
             <Card icon="./icon-reaction.svg" title="Reaction" score={80} />
