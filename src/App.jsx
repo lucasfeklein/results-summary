@@ -1,3 +1,5 @@
+import { Card } from "./components/Card";
+
 function App() {
   return (
     <div className="h-screen flex justify-center items-center">
@@ -19,16 +21,11 @@ function App() {
         </div>
         <div className="flex-1 p-9 flex flex-col gap-6">
           <h2 className="text-dark-grey-blue text-lg">Summary</h2>
-          <div>
-            <div className="flex justify-between bg-light-red bg-opacity-5 p-4 rounded-lg">
-              <div className="flex gap-2">
-                <img src="./icon-reaction.svg" />
-                <p className="text-light-red">Reaction</p>
-              </div>
-              <p className="text-secondary">
-                <span className="text-dark-grey-blue">80</span> / 100
-              </p>
-            </div>
+          <div className="flex flex-col gap-3">
+            <Card icon="./icon-reaction.svg" title="Reaction" score={80} />
+            <Card icon="./icon-memory.svg" title="Memory" score={92} />
+            <Card icon="./icon-verbal.svg" title="Verbal" score={61} />
+            <Card icon="./icon-visual.svg" title="Visual" score={72} />
           </div>
           <button className="bg-dark-grey-blue text-white rounded-full p-3">
             Continue
