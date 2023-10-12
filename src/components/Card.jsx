@@ -9,7 +9,7 @@ const Card = ({ icon, title, score }) => {
       className="flex justify-between p-4 rounded-lg"
     >
       <div className="flex gap-3">
-        <img src={icon} />
+        <img src={icon} alt="icon" />
         <p style={{ color: color }}>{title}</p>
       </div>
       <p className="text-gray-400">
