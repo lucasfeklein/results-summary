@@ -1,14 +1,14 @@
 function App() {
   return (
     <div className="h-screen flex justify-center items-center">
-      <div className="flex border rounded-3xl overflow-hidden">
-        <div className="flex-1 text-center flex flex-col items-center gap-5 bg-gradient-to-t from-light-royal-blue to-light-slate-blue p-7 border rounded-3xl">
+      <div className="flex border border-none rounded-3xl overflow-hidden">
+        <div className="flex-1 text-center flex flex-col items-center gap-6 bg-gradient-to-t from-light-royal-blue to-light-slate-blue p-9 border rounded-3xl">
           <h1 className="text-secondary text-lg">Your Result</h1>
-          <div className="border border-none rounded-full h-[130px] w-[130px] flex flex-col justify-center bg-gradient-to-t from-light-royal-blue to-light-slate-blue">
-            <p className="text-white text-[50px] font-bold leading-[45px]">
+          <div className="border border-none rounded-full h-[150px] w-[150px] flex flex-col justify-center bg-gradient-to-t from-persian-blue to-violet-blue">
+            <p className="text-white text-[50px] font-bold leading-[55px]">
               76
             </p>
-            <p className="text-secondary">of 100</p>
+            <p className="text-secondary text-sm">of 100</p>
           </div>
           <div>
             <h2 className="text-white text-2xl mb-2">Great</h2>
@@ -17,8 +17,22 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="flex-1">
-          <h2>Summary</h2>
+        <div className="flex-1 p-9 flex flex-col gap-6">
+          <h2 className="text-dark-grey-blue text-lg">Summary</h2>
+          <div>
+            <div className="flex justify-between bg-light-red bg-opacity-5 p-4 rounded-lg">
+              <div className="flex gap-2">
+                <img src="./icon-reaction.svg" />
+                <p className="text-light-red">Reaction</p>
+              </div>
+              <p className="text-secondary">
+                <span className="text-dark-grey-blue">80</span> / 100
+              </p>
+            </div>
+          </div>
+          <button className="bg-dark-grey-blue text-white rounded-full p-3">
+            Continue
+          </button>
         </div>
       </div>
     </div>
