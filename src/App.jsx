@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="h-screen flex justify-center items-center">
       <div className="flex flex-col h-screen md:h-auto md:flex-row w-screen md:max-w-[610px]">
-        <div className="flex-1 text-center flex flex-col justify-between items-center gap-6 bg-gradient-to-t from-light-royal-blue to-light-slate-blue p-9 border rounded-b-3xl md:rounded-3xl">
+        <div className="flex-1 text-center flex flex-col justify-between items-center gap-6 bg-gradient-to-t from-light-royal-blue to-light-slate-blue p-9 rounded-b-3xl md:rounded-3xl">
           <h1 className="text-secondary text-lg">Your Result</h1>
           <div className="border border-none rounded-full h-[150px] w-[150px] flex flex-col justify-center bg-gradient-to-t from-persian-blue to-violet-blue">
             <p className="text-white text-[50px] font-bold leading-[55px]">
